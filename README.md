@@ -26,7 +26,7 @@ Our preliminary brainstorm session came up with four ideas: float valve, pressur
 
 The reason the float valve isn't a reasonable choice is due to the fact that this mechanism is largely mechanical and would work well if the switch were close to the tank. However, the switch is 550 ft down an incline back towards the house. Also, a float valve isn't very interesting. But we value the concept of a float valve and we will attempt to use the "float" concept. 
 
-The reason the pressure sensor was discarded is because the difficulty it brings. It is hard to calibrate and determine 
+The reason the pressure sensor was discarded is because the difficulty it brings. It is hard to calibrate and determine the depth of the tank from the water pressure. Also pressure sensors are rather expensive and since we only need to know when the tank is full not how full the tank is we decided that using a pressure sensor was not worth the price.
 
 Helpful Links and Resources: sparkfun.com, https://www.facebook.com/JacobSpringsFarm/timeline?ref=page_internal, Tim May, Andre the farmer
 
