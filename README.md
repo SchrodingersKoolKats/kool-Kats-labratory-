@@ -26,9 +26,33 @@ Our preliminary brainstorm session came up with four ideas: float valve, pressur
 
 The reason the float valve isn't a reasonable choice is due to the fact that this mechanism is largely mechanical and would work well if the switch were close to the tank. However, the switch is 550 ft down an incline back towards the house. Also, a float valve isn't very interesting. But we value the concept of a float valve and we will attempt to use the "float" concept. 
 
-The reason the pressure sensor was discarded is because the difficulty it brings. Although it is not too difficult to determine the depth of the water from the water pressure. We found that pressure sensors that can measure the change in pressure thatwe are looking at are rather expensive. Therefore, since we only need to know when the tank is full not how full the tank is we decided that using a pressure sensor was not worth the price as there are other low cost viable methods for solving this problem.
+The reason the pressure sensor was discarded is because the difficulty it brings. Although it is not too difficult to determine the depth of the water from the water pressure, we found that pressure sensors that can measure the change in pressure that we are looking at are rather expensive. Therefore, since we only need to know when the tank is full not how full the tank is we decided that using a pressure sensor was not worth the price as there are other low cost viable methods for solving this problem.
 
-Helpful Links and Resources: sparkfun.com, https://www.facebook.com/JacobSpringsFarm/timeline?ref=page_internal, Tim May, Andre the farmer
+---------------------------------
+
+Design Idea One:
+------------------------------------------
+
+The infrared sensor requires some more complicated technology. The general design idea is that we have the infrared sensor powered by an Arduino board in the tank connected to a pvc pipe apparatus. This apparatus would be cemented to the bottom of the tank and would have holes drilled into the side of the pipe. Inside the pipe a ping pong ball would be placed. As water would pump from the bottom and fill the tank as well as the tube, the ping pong ball would rise steadily up to the top of the apparatus. Once there, the ping pong ball would break the infrared sensor beam. This would cause the Arduino to send a signal via an Xbee Wireless Antenna to another Arduino board in the shed. This Arduino would have another Xbee Wireless Antenna ready to receive the signal and then it will use a solenoid with resistors to create a magnetic field that would effectively turn off the water pump. 
+
+We understand that some setbacks include the water resistance of the sensors and the capabilities of this system to be self sufficient and to send a signal possibly through some barriers like the shed. However, we considered this too and figure that we can power this system with a solar cell that can be supported with a rechargeable battery. Also, we do not think that the signal will have problems reaching the receiver considering the 1 mile radius of the Xbee. Until we test more we will not have a definitive conclusion. 
+
+--------------------------------------------------
+
+Design Idea Two:
+--------------------------------------
+
+The second option we still consider seriously is the use of a conductivity sensor. This would be more simple to install into the tank because we would not have to rely on an apparatus that has to cement into the bottom. This could hang from the top and all that would be required were two wires to descend towards the water. Once the water touched the wires, a current would be allowed to flow that would power the Arduino board for a system identical to the system used for infrared sensors. This could be a cheaper option and requires more testing to determine which design idea we will go with. 
+
+An important thing to consider with this design idea is the amount of electricity that could be in the water. We do not want to shock someone who came into contact with this water. Research is required to determine the validity to this statement and to see if this may be a more efficient and cheaper option. 
+
+----------------------------------------------
+
+
+Helpful Links and Resources: 
+------------------------------------------
+
+sparkfun.com, https://www.facebook.com/JacobSpringsFarm/timeline?ref=page_internal, Tim May, Andre the farmer
 
 Pictures: 
 ![Alt Text](http://i.ehow.com/images/a04/v2/m4/repair-plastic-water-tank-200X200.jpg) 
