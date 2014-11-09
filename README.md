@@ -1,7 +1,7 @@
 kool-Kats-labratory
 ===================
 
-Client: Jacob Springs Farm 
+Client: Jacob Springs Farm (Section 2)
 --------------------------
 
 Jacob Springs Farm represents a minority of smaller farms local to Boulder that emphasize their farming systems on efficiency, sustainability, and being organic. Their main goal is to minimize costs to compete with large scale farms that have more funds and resources. The main products they farm include grass fed proteins such as duck, lamb, goose, chicken and eggs and fruits, herbs, and vegetables. There is a difference in the techniques that Jacob Springs Farm uses. They use rotational grazing and organic feed. Their whole process is based on being organic as possible removing unnecessary hormones, pesticides, and chemical fertilizer that larger farms use. 
@@ -10,7 +10,7 @@ Jacob Springs Farm represents a minority of smaller farms local to Boulder that 
 
 ----------------------------
 
-Problem:
+Problem: (Section 3)
 -----------------------------
 
 On any given day, there is a lot of activitiy and commotion on the farm ranging from beheading chickens to fixing fences to support the rotational grazing system. In the midst of all this activity, it is important to have good time management and a schedule that reduces friction and wasting time. There are many tasks for a farmer and this is the perspective we are using when handling any problems the farm presents. 
@@ -25,7 +25,7 @@ The system must fit in the water tank and needs to be self sufficient. The openi
 
 -------------------------------
 
-Design Alternatives: 
+Design Alternatives: (Section 4)
 --------------------------------
 
 Our preliminary brainstorm session came up with four ideas: float valve, pressure sensor, infrared sensor, and a conductivity sensor. However, we consider the infrared sensor the most viable option. 
@@ -38,7 +38,7 @@ The reason the pressure sensor was discarded is because the difficulty it brings
 
 ---------------------------------
 
-Design Idea One:
+Design Idea One: (Section 5)
 ------------------------------------------
 
 The infrared sensor requires some more complicated technology. The general design idea is that we have the infrared sensor powered by an Arduino board in the tank connected to a pvc pipe apparatus. This apparatus would be cemented to the bottom of the tank and would have holes drilled into the side of the pipe. Inside the pipe a ping pong ball would be placed. As water would pump from the bottom and fill the tank as well as the tube, the ping pong ball would rise steadily up to the top of the apparatus. Once there, the ping pong ball would break the infrared sensor beam. This would cause the Arduino to send a signal via an Xbee Wireless Antenna to another Arduino board in the shed. This Arduino would have another Xbee Wireless Antenna ready to receive the signal and then it will use a solenoid with resistors to create a magnetic field that would effectively turn off the water pump. 
@@ -57,7 +57,13 @@ The second option we still considered is the use of a conductivity sensor. This 
 An important thing to consider with this design idea is the amount of electricity that could be in the water. We do not want to shock someone who came into contact with this water. However, after doing more research, we found that it isn't a viable option because the wires have to be extremely close together in order for it to work. 
 
 ----------------------------------------------
+Update of Construction Progress: (Section 5)
+-----------------------------------------------
+Currently we are focusing on the connection between the two radios. This is different from the primary design to use the XBee Wireless Antennas because we found a cheaper alternative. However, it is difficult to figure out the code and we are working on that so the system at the tank can communicate the Arduino board back at the shed. Most of the group has little experience with programming and code so this proves to be a slow process that will take most of the work time. 
 
+Besides that, the rest of the group has developed the actual pipe system that will go into the tank. We found that using a mixture of clamps is the best option for attaching the pipe to the side of the tank so it does not move. Specifically we are using an Astoria clamp which is an old fashioned hose clamp. This is fastened around the pipe and it has one side that is threaded so a screw can be placed there. Attached to that threaded side using washers and bolts is another beam clamp that has been modified for our design. A hole big enough for the bolt has been drilled into one side and that is where it attaches to the Astoria clamp. On the other side we have another screw coming through. The plastic lip to the water tank will be placed inbetween the space created by the screw and bolt. This should securely fasten the pipe to the lip of the tank. Also, we have placed a cap on the bottom of the pipe so we can pour sand down into the pipe to weigh it down to prevent further movement of the pipe in the water. 
+
+The last two major obstacles in the construction process is to figure out the solenoid and relay switch which will turn off the water pump. The other obstacle is to figure out how to make our system self sufficient via solar panels and rechargeable batteries. The group has not considered how to best manufacture these components. 
 
 Helpful Links and Resources: 
 ------------------------------------------
