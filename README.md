@@ -70,15 +70,25 @@ Budget/Bill of Materials: (Section 9)
 ------------------------------------------------
 
 PVC Pipe - $10 for ten feet
+
 Infrared sensors (Emitters and Detectors) - $1.95 
+
 XBee Pro 60mW Wire Antenna - Series 1 (802.15.4) – $37.95 (2)
+
 Arduino Board (RedBoard) - $19.95 (2)
+
 EPS-200 Flexible Polyolefin Heat Shrink Tubing, 1/2" I.D., 6" L, Black - $1.26
+
 Solenoid and resistors
+
 Wires
+
 Rechargeable Battery (9V) - $5.00
+
 120V Wall Adapter - $6.00
+
 Epoxy 
+
 Solar Cell Large 2.5 W – $34.95
 
 --------------------------------------------------------------
