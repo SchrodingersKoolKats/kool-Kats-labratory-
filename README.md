@@ -84,7 +84,7 @@ Solar Cell Large 2.5 W – $34.95
 --------------------------------------------------------------
 Timeline (Section 10)
 --------------------------------------------------------
-![Alt Text](http://imgur.com/hpnylpA) 
+![Alt Text](http://i.imgur.com/hpnylpA.png?1) 
 
 
 Helpful Links and Resources: 
