@@ -68,9 +68,19 @@ Currently we are focusing on the connection between the two radios. This is diff
 
 Besides that, the rest of the group has developed the actual pipe system that will go into the tank. We found that using a mixture of clamps is the best option for attaching the pipe to the side of the tank so it does not move. Specifically we are using an Astoria clamp which is an old fashioned hose clamp. This is fastened around the pipe and it has one side that is threaded so a screw can be placed there. Attached to that threaded side using washers and bolts is another beam clamp that has been modified for our design. A hole big enough for the bolt has been drilled into one side and that is where it attaches to the Astoria clamp. On the other side we have another screw coming through. The plastic lip to the water tank will be placed inbetween the space created by the screw and bolt. This should securely fasten the pipe to the lip of the tank. Also, we have placed a cap on the bottom of the pipe so we can pour sand down into the pipe to weigh it down to prevent further movement of the pipe in the water. 
 
-The last two major obstacles in the construction process is to figure out the solenoid and relay switch which will turn off the water pump. The other obstacle is to figure out how to make our system self sufficient via solar panels and rechargeable batteries. The group has not considered how to best manufacture these components. 
+The other obstacle is to figure out how to make our system self sufficient via solar panels and rechargeable batteries. The group has not considered how to best manufacture these components. 
 
 -----------------------------------------------
+
+Update Number Two:
+----------------------------------------
+The group has now figured out the connection between the two Xbee Wireless Antenna's. The group decided to go back to this design after further failure with the radios. Ironically, both set ups eventually worked but the Xbee Antennas were finished first.
+
+The solenoid and relay has been completed as well. The set up used was provided by Sparkfun. All that was needed was soldering and figuring out some simple coding. It is called the Beefcake Relay Control Kit. As a result of this, we completed a board that will allow Andre to fill the tank either half-way or completely. Additionally, a stop button was included so Andre could manually shut the water pump off if need be. The way this system completely works is that once the infrared sensors on the PVC pipe at the tank, which is already finished, it sends a signal from the Xbee transmitter at the tank to the receiver at the water pump. That signal will trigger the water pump to shut off via the Beefcake. 
+
+The last thing required for this project is to make everything look professional and to finish the solar panel. The relay set up with the buttons will be mounted onto the wall and protected with acrylic. The pipe looks professional enough as it is, and the solar panel, which we have already bought, is contemporary. The exact battery needed is still being determined but other than that, it is a matter of simply hooking it up to the rest of the Arduino systems. This should be able to provide electricity for all the components of this project even with intervals of cloudy and snowy days. 
+-----------------------------------------------------------------------------------------------------------
+
 Budget/Bill of Materials: (Section 9)
 ------------------------------------------------
 
@@ -96,6 +106,8 @@ Epoxy
 ----------------------------------------------
 Solar Cell Large 2.5 W – $34.95
 ---------------------------------------------
+Poster - $60.00
+-------------------------------------------
 --------------------------------------------------------------
 Timeline (Section 10)
 --------------------------------------------------------
