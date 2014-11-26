@@ -79,7 +79,8 @@ The group has now figured out the connection between the two Xbee Wireless Anten
 The solenoid and relay has been completed as well. The set up used was provided by Sparkfun. All that was needed was soldering and figuring out some simple coding. It is called the Beefcake Relay Control Kit. As a result of this, we completed a board that will allow Andre to fill the tank either half-way or completely. Additionally, a stop button was included so Andre could manually shut the water pump off if need be. The way this system completely works is that once the infrared sensors on the PVC pipe at the tank, which is already finished, it sends a signal from the Xbee transmitter at the tank to the receiver at the water pump. That signal will trigger the water pump to shut off via the Beefcake. 
 
 The last thing required for this project is to make everything look professional and to finish the solar panel. The relay set up with the buttons will be mounted onto the wall and protected with acrylic. The pipe looks professional enough as it is, and the solar panel, which we have already bought, is contemporary. The exact battery needed is still being determined but other than that, it is a matter of simply hooking it up to the rest of the Arduino systems. This should be able to provide electricity for all the components of this project even with intervals of cloudy and snowy days. 
------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------
 
 Budget/Bill of Materials: (Section 9)
 ------------------------------------------------
