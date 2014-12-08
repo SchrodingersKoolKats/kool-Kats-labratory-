@@ -82,6 +82,10 @@ The last thing required for this project is to make everything look professional
 
 --------------------------------------------
 
+Final Update:
+-------------------------------------------
+The project is now completely finished and has been presented at the Design Expo. The solar panel has not been completely tested but the group is confident it will work to recharge the batteries. Currently, there are four 1.2 V rechargeable batteries connected to the Arduino board at the shed and is powered by the solar panel. 
+
 Budget/Bill of Materials: (Section 9)
 ---------------------------------------------
 | Object                                 | Object    |
