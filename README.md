@@ -83,33 +83,22 @@ The last thing required for this project is to make everything look professional
 --------------------------------------------
 
 Budget/Bill of Materials: (Section 9)
-------------------------------------------------
-
-PVC Pipe - $10 for ten feet
-----------------------------------
-Infrared sensors (Emitters and Detectors) - $1.95 
---------------------------------------
-XBee Pro 60mW Wire Antenna - Series 1 (802.15.4) – $37.95 (2)
------------------------------------------------
-Arduino Board (RedBoard) - $19.95 (2)
-------------------------------------------
-EPS-200 Flexible Polyolefin Heat Shrink Tubing, 1/2" I.D., 6" L, Black - $1.26
-------------------------------------
-Solenoid and resistors
---------------------------------------------
-Wires
-------------------------------------------
-Rechargeable Battery (9V) - $5.00
-------------------------------------------
-120V Wall Adapter - $6.00
-----------------------------------------------
-Epoxy 
-----------------------------------------------
-Solar Cell Large 2.5 W – $34.95
 ---------------------------------------------
-Poster - $60.00
--------------------------------------------
+| Object                                 | Object    |
+|----------------------------------------|-----------|
+| White LED                              | White LED |
+| Silicone                               | $5.41     |
+| Ping Pong Balls                        | $3.24     |
+| PVC Pipe                               | $6.17     |
+| Poster                                 | $32.00    |
+| Miscellaneous Components from Tim      | $10.00    |
+| McGuckin Hardware                      | $66.97    |
+| Sparkfun Materials (Xbee and Arduinos) | $150.00   |
+| Lamp                                   | $4.00     |
+| Solder Board                           | $5.00     |
+| Total                                  | $284.50   |
 --------------------------------------------------------------
+
 Timeline (Section 10)
 --------------------------------------------------------
 ![Alt Text](http://i.imgur.com/hpnylpA.png?1) 
