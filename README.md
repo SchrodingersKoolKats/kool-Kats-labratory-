@@ -84,7 +84,131 @@ The last thing required for this project is to make everything look professional
 
 Final Update:
 -------------------------------------------
-The project is now completely finished and has been presented at the Design Expo. The solar panel has not been completely tested but the group is confident it will work to recharge the batteries. Currently, there are four 1.2 V rechargeable batteries connected to the Arduino board at the shed and is powered by the solar panel. 
+The project is now completely finished and has been presented at the Design Expo. The solar panel has not been completely tested but the group is confident it will work to recharge the batteries. Currently, there are four 1.2 V rechargeable batteries connected to the Arduino board at the shed and is powered by the solar panel. For further improvement we could upgrade the battery to a more expensive one that uses more voltage. However, the design we have currently works just as well. The PVC pipe system is finished now as well. There is a clamp on top that will allow it to latch on to the lip of the water tank and the bottom has been capped off. At the bottom we will place sand so it will weigh it down to prevent the tube from swaying in the water to improve accuracy. 
+The Xbee and beefcake relay is all set up on a piece of acrylic that can be drilled into the wall. The three buttons are set up there as well so he can press a button corresponding to filling the tank halfway or completely full. The third button is for stopping the water pump in an emergency. 
+At the tank, we have a pelican case that is more expensive however we are absolutely confident it will protect the system from weather. It has holes drilled into it that are resealed with silicon that allow wires to go through it. A solar panel is hooked up to this which will go outside of the shed. This is our final product and it demonstrates almost complete functionality.  
+
+Here is the final code we used for the Arduino and Xbee antennas to get them to communicate. 
+
+Home Code: 
+---------------
+
+  #include <SoftwareSerial.h>
+SoftwareSerial XBee(2, 3); // RX, TX
+
+int button1; //low button
+int button2; //high button
+int pumpstatus; // 0 makes the relay turn the pump off
+int stopbutton;
+int goal;
+
+const int button1pin = 13;
+const int button2pin = 12;
+const int relaypin = 8;
+const int stopbuttonpin = 7;
+
+//char fill_fully = 'F';
+char fill_halfway = 'H';
+char shut_off = 'S';
+
+void setup()
+{
+  XBee.begin(9600);
+  Serial.begin(9600);
+  pinMode(button1pin, INPUT);
+  pinMode(button2pin, INPUT);
+  pinMode(relaypin, OUTPUT);
+  pinMode(stopbuttonpin, INPUT);
+}
+
+void loop()
+{
+  button1 = digitalRead(button1pin);
+  button2 = digitalRead(button2pin);
+  stopbutton = digitalRead(stopbuttonpin);
+    //for buttons, HIGH means the button is unpushed,
+    // LOW means the button is pushed 
+  if (stopbutton == LOW)
+  {
+    goal = 0; //stop
+  }
+  else if (button1 == LOW) 
+  {
+    goal = 1; //fill halfway
+  }
+  else if (button2 == LOW)
+  {
+    goal = 2; //fill fully
+  }
+  
+  switch(goal)
+  {
+    case 0:
+      digitalWrite(relaypin, LOW); //shut off the pump
+      break;
+    case 1:
+      digitalWrite(relaypin, HIGH);
+      XBee.write(fill_halfway);
+      //delay(1000);
+      break;
+    case 2:
+      digitalWrite(relaypin, HIGH);
+      //delay(1000);
+  }
+
+
+    if (XBee.available()) 
+    {
+      char off = XBee.read();
+      //if XBee is picking up a signal to turn off
+      if (off == 83)
+      {
+        digitalWrite(relaypin, LOW);
+        goal = 0;
+      }
+    }
+  }
+  -------------------
+  Tank Code:
+  ---------------
+  ---------------------
+  #include <SoftwareSerial.h>
+SoftwareSerial XBee(2, 3); // RX, TX
+
+int lowsensor;
+int highsensor;
+
+const int lowsensorpin = 5;
+const int highsensorpin = 6;
+
+char fill_halfway = 'H';
+char shut_off = 'S';
+
+void setup()
+{
+  XBee.begin(9600);
+  Serial.begin(9600);
+  pinMode(lowsensorpin, INPUT);
+  pinMode(highsensorpin, INPUT);
+}
+
+void loop(){
+lowsensor = digitalRead(lowsensorpin);
+highsensor = digitalRead(highsensorpin);
+Serial.println(highsensor);
+if (highsensor == 1) {
+  XBee.write(shut_off);
+}
+  if (XBee.available()) {
+      if (XBee.read() == fill_halfway) {
+      //wait till low sensor reads a zero
+         if (lowsensor == 1) {
+         XBee.write(shut_off);
+         }
+      }
+   }
+}
+
 
 Budget/Bill of Materials: (Section 9)
 ---------------------------------------------
@@ -103,6 +227,10 @@ Budget/Bill of Materials: (Section 9)
 | Total                                  | $284.50   |
 --------------------------------------------------------------
 
+Future Modifications:
+------------------------------------------
+For the future, we are trying to develop a system that works with basically no error. This means that the sensors work consistently and the wireless communication is not faulty. This could include buying more expensive sensors or devices that can secure it better than simple electrical tape. Also, a better battery is under consideration. However, other than that, the only other improvements would be the aesthetics of the system making it prettier. It is not store shelf quality but it is definitely functionable and capable of marketing. 
+
 Timeline (Section 10)
 --------------------------------------------------------
 ![Alt Text](http://i.imgur.com/hpnylpA.png?1) 
@@ -113,8 +241,11 @@ Helpful Links and Resources:
 ------------------------------------------
 
 sparkfun.com
+
 https://www.facebook.com/JacobSpringsFarm/timeline?ref=page_internal
+
 Tim May
+
 Andre the farmer
 
 
