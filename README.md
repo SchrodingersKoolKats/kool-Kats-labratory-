@@ -170,7 +170,7 @@ void loop()
   }
   -------------------
   Tank Code:
-  ---------------
+--------------------
   ---------------------
   #include <SoftwareSerial.h>
 SoftwareSerial XBee(2, 3); // RX, TX
@@ -212,9 +212,9 @@ if (highsensor == 1) {
 
 Budget/Bill of Materials: (Section 9)
 ---------------------------------------------
-| Object                                 | Object    |
+| Object                                 | Price     |
 |----------------------------------------|-----------|
-| White LED                              | White LED |
+| White LED                              | $1.71     |
 | Silicone                               | $5.41     |
 | Ping Pong Balls                        | $3.24     |
 | PVC Pipe                               | $6.17     |
