@@ -40,6 +40,8 @@ Pressure Valve
 
 The reason the pressure sensor was discarded is because the difficulty it brings. Although it is not too difficult to determine the depth of the water from the water pressure, we found that pressure sensors that can measure the change in pressure that we are looking at are rather expensive. Therefore, since we only need to know when the tank is full not how full the tank is we decided that using a pressure sensor was not worth the price as there are other low cost viable methods for solving this problem.
 
+The reason the conductivity sensor was not a viable option was because how ineffective it truly worked in the water. We tested a sensor consisting of two wires but unfortunately they would have to be extremely close to each other in order to work. As a result, we decided to go with the infrared sensor. 
+
 ---------------------------------
 
 Design Idea One: (Section 5)
@@ -86,7 +88,7 @@ Final Update:
 -------------------------------------------
 The project is now completely finished and has been presented at the Design Expo. The solar panel has not been completely tested but the group is confident it will work to recharge the batteries. Currently, there are four 1.2 V rechargeable batteries connected to the Arduino board at the shed and is powered by the solar panel. For further improvement we could upgrade the battery to a more expensive one that uses more voltage. However, the design we have currently works just as well. The PVC pipe system is finished now as well. There is a clamp on top that will allow it to latch on to the lip of the water tank and the bottom has been capped off. At the bottom we will place sand so it will weigh it down to prevent the tube from swaying in the water to improve accuracy. 
 The Xbee and beefcake relay is all set up on a piece of acrylic that can be drilled into the wall. The three buttons are set up there as well so he can press a button corresponding to filling the tank halfway or completely full. The third button is for stopping the water pump in an emergency. 
-At the tank, we have a pelican case that is more expensive however we are absolutely confident it will protect the system from weather. It has holes drilled into it that are resealed with silicon that allow wires to go through it. A solar panel is hooked up to this which will go outside of the shed. This is our final product and it demonstrates almost complete functionality.  
+At the tank, we have a Pelican case that is more expensive however we are absolutely confident it will protect the system from weather. It has holes drilled into it that are resealed with silicon that allow wires to go through it. A solar panel is hooked up to this which will go outside of the shed. This is our final product and it demonstrates almost complete functionality.  
 
 Here is the final code we used for the Arduino and Xbee antennas to get them to communicate. 
 
@@ -229,7 +231,7 @@ Budget/Bill of Materials: (Section 9)
 
 Future Modifications:
 ------------------------------------------
-For the future, we are trying to develop a system that works with basically no error. This means that the sensors work consistently and the wireless communication is not faulty. This could include buying more expensive sensors or devices that can secure it better than simple electrical tape. Also, a better battery is under consideration. However, other than that, the only other improvements would be the aesthetics of the system making it prettier. It is not store shelf quality but it is definitely functionable and capable of marketing. 
+For the future, we are trying to develop a system that works with basically no error. This means that the sensors work consistently and the wireless communication is not faulty. This could include buying more expensive sensors or devices that can secure it better than simple electrical tape. Also, a better battery is under consideration. What we mean is we could find a battery of higher voltage that could last longer if no energy was given to it for an extended period of time. However, other than that, the only other improvements would be the aesthetics of the system making it prettier. It is not store shelf quality but it is definitely functionable and capable of marketing. We looked up similar systems that were sold professionally. One was called the Tunze Osmolator which is specialized for aquariums. The price was about $3100. Our group has managed to make a similar system that costs significantly less. This project definitely demonstrates efficiency and the critical design process. 
 
 Timeline (Section 10)
 --------------------------------------------------------
@@ -244,9 +246,13 @@ sparkfun.com
 
 https://www.facebook.com/JacobSpringsFarm/timeline?ref=page_internal
 
-Tim May
+Tim May 
 
 Andre the farmer
+
+Professor Soltys (Thank you by the way. Great semester)
+
+Jace and Spencer, the TAs (Awesome dudes!)
 
 
 
