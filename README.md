@@ -100,6 +100,9 @@ Inside of the Pelican case.
 ![AltText](http://i.imgur.com/vLRs6Hd.jpg)
 Pelican case and solar panel.
 
+![AltText](http://i.imgur.com/SUOiUTv.jpg?2)
+PVC pipe apparatus
+
 Here is the final code we used for the Arduino and Xbee antennas to get them to communicate. 
 
 Home Code: 
