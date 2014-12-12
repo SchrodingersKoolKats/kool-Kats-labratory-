@@ -91,6 +91,15 @@ The project is now completely finished and has been presented at the Design Expo
 The Xbee and beefcake relay is all set up on a piece of acrylic that can be drilled into the wall. The three buttons are set up there as well so he can press a button corresponding to filling the tank halfway or completely full. The third button is for stopping the water pump in an emergency. 
 At the tank, we have a Pelican case that is more expensive however we are absolutely confident it will protect the system from weather. It has holes drilled into it that are resealed with silicon that allow wires to go through it. A solar panel is hooked up to this which will go outside of the shed. This is our final product and it demonstrates almost complete functionality.  
 
+![AltText](http://i.imgur.com/gLJIjjE.jpg?1)
+Board inside the shed.
+
+![AltText](http://i.imgur.com/JIARk48.jpg?1)
+Inside of the Pelican case.
+
+![AltText](http://i.imgur.com/vLRs6Hd.jpg)
+Pelican case and solar panel.
+
 Here is the final code we used for the Arduino and Xbee antennas to get them to communicate. 
 
 Home Code: 
