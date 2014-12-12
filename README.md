@@ -21,6 +21,7 @@ Andre Houssney is the specific farmer our group will be working with. He oversee
 The system must fit in the water tank and needs to be self sufficient. The opening of the water tank isn't too wide, perhaps 12 inches, and our system needs to be able to maneuver that comfortably. The system must be able to monitor water levels within the two tanks (7ft and 5ft tall) and be capable of shutting off the pump from a distance of 550 ft to prevent overflow. The switch to turn the pumps off come from a 120V wall outlet which will also need to be accounted for. These are the specifications of this project.
 
 ![Alt Text](http://i.imgur.com/kl3MDRR.png)
+
 Cad drawing of water tank
 
 ![Alt Text](http://i.imgur.com/wPhato3.jpg)
